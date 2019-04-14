@@ -22,24 +22,28 @@ const myWordList =  [
 function writeMyArray(myWordList) {
   for (const array of myWordList) {
     console.log(array.text); 
+    console.log(array.total);
   }
 }
-
 writeMyArray(myWordList);
+
+
+function writeThis(word, number) {
+   for (let i=0; i<number; i++) {
+   console.log(word);
+    }
+}
+writeThis(writeMyArray(myWordList));
+
 
 
 // function getRandomNumber(max) {
 //     return Math.ceil(Math.random() * max);
 //   }
 
-//  function ten(word, number) {
-//    for (let i=0; i<number; i++) {
-//    console.log(word);
-//     }
-// }
-// ten('Patata', getRandomNumber(10));
 // ten('Aguacate', getRandomNumber(10));
 // ten('Pizza', getRandomNumber(10));
+//console.log(writeThis(writeMyArray(myWordList), number2));
 
 
 
