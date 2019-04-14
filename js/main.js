@@ -21,8 +21,9 @@ const myWordList =  [
 
 function writeMyArray(myWordList) {
   for (const array of myWordList) {
-    console.log(array.text); 
-    console.log(array.total);
+    //console.log(array.text); 
+    //console.log(array.total);
+    writeThis(array.text, array.total);
   }
 }
 writeMyArray(myWordList);
@@ -33,7 +34,7 @@ function writeThis(word, number) {
    console.log(word);
     }
 }
-writeThis(writeMyArray(myWordList));
+
 
 
 
