@@ -3,28 +3,21 @@
 fetch ('https://raw.githubusercontent.com/oneeyedman/terms/master/terms.js')
   .then(response => response.json())
   .then(data => {
-    for (const recorrido of data.results) {
-      writeThis(recorrido.text, recorrido.total)
-    }
+    writeMyArray(data.results);
   })
   
+
 function writeThis(word, number) {
   for (let i=0; i<number; i++) {
   console.log(word);
    }
 }
 
-// function writeMyArray(arr) {
-//   for (const array of arr) {
-//     //console.log(array.text); 
-//     //console.log(array.total);
-//     writeThis(array.text, array.total);
-//   }
-// }
-
-// writeMyArray(myWordList);
-
-
+function writeMyArray(arr) {
+  for (const array of arr) {
+    writeThis(array.text, array.total);
+  }
+}
 
 
 
